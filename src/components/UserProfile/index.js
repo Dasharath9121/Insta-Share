@@ -65,7 +65,6 @@ class UserProfile extends Component {
     const {
       followersCount,
       followingCount,
-      id,
       userBio,
       userId,
       userName,
@@ -137,7 +136,7 @@ class UserProfile extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="user-story-loader-container" testid="loader">
+    <div className="user-story-loader-container">
       <Loader type="TailSpin" color="#4094EF" height={50} width={50} />
     </div>
   )

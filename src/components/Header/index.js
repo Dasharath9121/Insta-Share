@@ -99,118 +99,120 @@ const Header = props => {
         }
 
         return (
-          <nav className='header_container'>
-            <div className='large_container'>
-              <div className='title_div'>
-                <Link to='/'>
+          <nav className="header_container">
+            <div className="large_container">
+              <div className="title_div">
+                <Link to="/">
                   <img
-                    src='https://res.cloudinary.com/dziwdneks/image/upload/v1675419223/login_icon_ekrs85.png'
-                    className='login-website-logo-image'
-                    alt='website logo'
+                    src="https://res.cloudinary.com/dziwdneks/image/upload/v1675419223/login_icon_ekrs85.png"
+                    className="login-website-logo-image"
+                    alt="website logo"
                   />
                 </Link>
-                <h1 className='title_heading'>Insta Share</h1>
+                <h1 className="title_heading">Insta Share</h1>
               </div>
 
-              <div className='links_search_div'>
-                <div className='search_div'>
+              <div className="links_search_div">
+                <div className="search_div">
                   <input
                     value={searchText}
                     onChange={changeSearchText}
-                    className='searchBar'
-                    type='search'
-                    placeholder='Search Caption'
+                    className="searchBar"
+                    type="search"
+                    placeholder="Search Caption"
                   />
+                  {/* eslint-disable-next-line */}
                   <button
                     onClick={getUserSearchPosts}
-                    className='searchButton'
-                    type='button'
-                    testid='searchIcon'
+                    className="searchButton"
+                    type="button"
                   >
-                    <FaSearch className='searchIcon' />
+                    <FaSearch className="searchIcon" />
                   </button>
                 </div>
-                <ul className='nav_bar'>
-                  <Link to='/' className='nav_item'>
+                <ul className="nav_bar">
+                  <Link to="/" className="nav_item">
                     <li>Home</li>
                   </Link>
-                  <Link to='/my-profile' className='nav_item'>
+                  <Link to="/my-profile" className="nav_item">
                     <li>Profile</li>
                   </Link>
                 </ul>
                 <button
                   onClick={onClickLogout}
-                  type='button'
-                  className='logout_button'
+                  type="button"
+                  className="logout_button"
                 >
                   Logout
                 </button>
               </div>
             </div>
-            <div className='mobile_container'>
-              <div className='top_div'>
-                <div className='title_div'>
-                  <Link to='/'>
+            <div className="mobile_container">
+              <div className="top_div">
+                <div className="title_div">
+                  <Link to="/">
                     <img
-                      src='https://res.cloudinary.com/dziwdneks/image/upload/v1675419223/login_icon_ekrs85.png'
-                      className='login-website-logo-image'
-                      alt='website logo'
+                      src="https://res.cloudinary.com/dziwdneks/image/upload/v1675419223/login_icon_ekrs85.png"
+                      className="login-website-logo-image"
+                      alt="website logo"
                     />
                   </Link>
-                  <h1 className='title_heading'>Insta Share</h1>
+                  <h1 className="title_heading">Insta Share</h1>
                 </div>
+                {/* eslint-disable-next-line */}
                 <button
                   onClick={() => setHamburgerButton(!isOpen)}
-                  testid='hamburgerIcon'
-                  className='hamburgerButton'
-                  type='button'
+                  className="hamburgerButton"
+                  type="button"
                 >
-                  <GiHamburgerMenu className='hamburgerIcon' />
+                  <GiHamburgerMenu className="hamburgerIcon" />
                 </button>
               </div>
               {isOpen && (
-                <div className='links_div'>
-                  <ul className='nav_bar'>
-                    <Link to='/' className='nav_item'>
+                <div className="links_div">
+                  <ul className="nav_bar">
+                    <Link to="/" className="nav_item">
                       <li>Home</li>
                     </Link>
-                    <Link to='/my-profile' className='nav_item'>
+                    <Link to="/my-profile" className="nav_item">
                       <li>Profile</li>
                     </Link>
                     <li onClick={showSearchBar}>Search</li>
                   </ul>
                   <button
                     onClick={onClickLogout}
-                    type='button'
-                    className='logout_button'
+                    type="button"
+                    className="logout_button"
                   >
                     Logout
                   </button>
+                  {/* eslint-disable-next-line */}
                   <button
                     onClick={() => setHamburgerButton(!isOpen)}
-                    type='button'
-                    className='hamburgerButton'
+                    type="button"
+                    className="hamburgerButton"
                   >
-                    <IoCloseCircle className='hamburgerIcon' />
+                    <IoCloseCircle className="hamburgerIcon" />
                   </button>
                 </div>
               )}
               {searchBarVisible && (
-                <div className='search_div'>
+                <div className="search_div">
                   <input
                     value={searchText}
                     onChange={changeSearchText}
-                    className='searchBar'
-                    type='search'
-                    placeholder='Search Caption'
+                    className="searchBar"
+                    type="search"
+                    placeholder="Search Caption"
                   />
+                  {/* eslint-disable-next-line */}
                   <button
                     onClick={getUserSearchPosts}
-                    className='searchButton'
-                    type='button'
-                    testid='searchIcon'
+                    className="searchButton"
+                    type="button"
                   >
-                    <FaSearch className='searchIcon' />
+                    {/* eslint-disable-next-line */}
+                    <FaSearch className="searchIcon" />
                   </button>
                 </div>
               )}

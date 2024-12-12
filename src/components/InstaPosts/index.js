@@ -68,7 +68,7 @@ class InstaPosts extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="user-story-loader-container" testid="loader">
+    <div className="user-story-loader-container">
       <Loader type="TailSpin" color="#4094EF" height={50} width={50} />
     </div>
   )
@@ -204,8 +204,12 @@ class InstaPosts extends Component {
     return (
       <DataContext.Consumer>
         {value => {
-          const {searchText, isSearchButtonClicked, setLoading, isFailure} =
-            value
+          const {
+            searchText,
+            isSearchButtonClicked,
+            setLoading,
+            isFailure,
+          } = value
 
           return (
             <div className="posts-container">

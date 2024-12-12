@@ -40,30 +40,24 @@ const InstaPostItem = props => {
       </div>
       <img src={eachPost.postImage} alt="post" className="postImage" />
       <div className="social_div">
+        {/* eslint-disable-next-line */}
         {isLiked ? (
-          <button
-            onClick={postUnLikeApi}
-            testid="unLikeIcon"
-            type="button"
-            className="icon_button"
-          >
+          <button onClick={postUnLikeApi} type="button" className="icon_button">
+            {/* eslint-disable-next-line */}
             <FcLike className="likeIcon" />
           </button>
         ) : (
-          <button
-            onClick={postLikeApi}
-            testid="likeIcon"
-            type="button"
-            className="icon_button"
-          >
+          <button onClick={postLikeApi} type="button" className="icon_button">
+            {/* eslint-disable-next-line */}
             <BsHeart className="icon" />
           </button>
         )}
-
-        <button testid="commentIcon" type="button" className="icon_button">
+        {/* eslint-disable-next-line */}
+        <button type="button" className="icon_button">
           <FaRegComment className="icon" />
         </button>
-        <button testid="shareIcon" type="button" className="icon_button">
+        {/* eslint-disable-next-line */}
+        <button type="button" className="icon_button">
           <BiShareAlt className="icon" />
         </button>
       </div>
