@@ -39,18 +39,6 @@ This is an individual assessment. All work must be your own.
 
 </details>
 
-### Set Up Instructions
-
-<details>
-
-<summary>Click to view</summary>
-
-- Download dependencies by running `npm install`
-
-- Start up the app using `npm start`
-
-</details>
-
 ### Completion Instructions
 
 <details>
@@ -195,42 +183,6 @@ The app must have the following functionalities
 
 <br/>
 
-**The following instructions are required for the tests to pass**
-
-- **Note:**
-
-  - Don't use any third-party packages other than packages mentioned in the **Quick Tips**
-  - Use media queries for responsiveness. Instead of rendering the same elements twice for responsiveness.
-  - For Mini Projects, you have to use normal HTML elements to style the React Components. Usage of `styled-components` (CSS in JS) to style React components are not supported in Mini Projects. Test cases won't be passed, if you use styled components
-  - Refer to the below Example for the usage of `testid` in the HTML elements.
-
-    - Example: `<div testid="postItem" className="post-item"/>`.
-
-- **Routes**
-
-  - Render `Login` Route component when the path in URL matches `/login`
-  - Render `Home` Route component when the path in URL matches `/`
-  - Render `MyProfile` Route component when the path in URL matches `/my-profile`
-  - Render `UserProfile` Route component when the path in URL matches `/users/:id`
-    - **Note:-** use the specific user id in place of id
-
-- Wrap the `Loader` component with an HTML container element and add the `testid` attribute value as **loader** to it
-
-  ```jsx
-  <div className="loader-container" testid="loader">
-    <Loader type="TailSpin" color="#4094EF" height={50} width={50} />
-  </div>
-  ```
-
-- Wrap the Clickable `react-icons` components with an HTML button element and add the `testid` attribute values accordingly
-
-  ```jsx
-  <button type="button" testid="searchIcon">
-    <FaSearch />
-  </button>
-  ```
-
-- The Failure View image should consist of alt attribute value as `failure view`
 
 - **Login Route**
 
@@ -625,15 +577,3 @@ Returns a response containing the list of search posts.
 
 <br/>
 </details>
-
-### Project Submission Instructions
-
-- For Mini Projects, you can submit the test cases at your own pace. But we suggest you to submit the code to know the percentage of completion through test cases and that score will be considered for your interviews
-
-- Also it's important to publish your code frequently using `Step - 4` in the Instructions tab
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
